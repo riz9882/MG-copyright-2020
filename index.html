@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+ 
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+   .detel, .home, .social{
+      width: 20%;
+      
+    }
+    .images{
+      height: 12%;
+      width: 17%;
+    }
+  }
+  @media only screen and (max-width:800px) {
+    /* For tablets: */
+    .detel {
+      width: 70%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #feffff;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+.detel{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+.detel h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span{
+    color: orange;
+    
+}
+
+.detel p{
+    color: #555;
+    line-height: 22px;
+}
+
+.detel a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position:fixed;
+    top: 30%;
+    right: 10px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+   top: 15%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape{
+    bottom: 60px;
+    
+}
+
+.images:hover .girl{
+    left: 45%;
+}
+
+.social{
+    margin-left: 8%;
+    margin-top: 100px;
+}
+
+.social a{
+    font-size: 30px;
+    color: #212121;
+    margin-right: 20px;
+}
+
+.social a:hover{
+    color: orange;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .ima{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 800px;
+}
+.ima{
+    width: 45%;
+    height: 80%;
+    position:fixed;
+    top: 2%;
+    right: 10px;
+}
+.ima img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+   top: 15%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.ima:hover .shape{
+    bottom: 60px;
+    
+}
+
+.ima:hover .girl{
+    left: 45%;
+}
+
+
+    
+  }
+  </style>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/mg.jpg" class="logo">
+            <ul>
+                <li><a href="https://riz9882.github.io/personalweb/">ABOUT MOHAMED RIZWAN</a></li>
+               
+                
+            </ul>
+        </nav>
+        <div class="detel">
+            <h1>ABOUT THE COMPANY <span>MG</span></h1>
+            <p>MG is Basically a Software Startup Company owned my MOHAMED RIZWAN .The company is established Since 2020.If you Would like to contact Mr MOHAMED RIZWAN for any enquires or works please click the below whatsapp icon or instagram icon </p>
+            
+        </div>
+
+
+       
+        </div>
+        <div class="social">
+          
+            <a href=" https://wa.me/+917034999762"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/_rizwan.8/"><i class="fab fa-instagram"></i></a>
+            
+         </div>
+    </body>
+    </html>
